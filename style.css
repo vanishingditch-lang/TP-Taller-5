@@ -1,0 +1,193 @@
+/* Variables para los colores del Capitán América */
+:root {
+    --color-azul-capitan: #002366;
+    --color-rojo-capitan: #BF0A30;
+    --color-blanco-capitan: #f0f0f0;
+    --color-plata-capitan: #C0C0C0;
+    --color-sombra-blanca: 0 0 10px var(--color-blanco-capitan), 0 0 20px var(--color-blanco-capitan);
+}
+
+/* Estilos generales de la página y tipografía 
+  Usamos una fuente limpia y robusta para una sensación de patriotismo y fuerza.
+*/
+body {
+    background-color: var(--color-blanco-capitan);
+    color: var(--color-azul-capitan);
+    font-family: 'Georgia', 'Times New Roman', serif;
+    margin: 0;
+    padding-bottom: 50px; /* Espacio para el footer */
+}
+
+/* Configuración de las cajas y contenedores
+  Damos un toque de diseño a los elementos principales.
+*/
+.container, .card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+/* Estilo del encabezado (Header)
+  Incluye el fondo de imagen con un efecto de escudo.
+*/
+.header-ai {
+    background-image: linear-gradient(rgba(0, 35, 102, 0.8), rgba(0, 35, 102, 0.8)), url('https://images.unsplash.com/photo-1549490382-b7e61a4c0292?q=80&w=2070&auto=format&fit=crop'); /* Reemplaza esta URL con tu propia imagen del escudo o temática del Capitán América */
+    background-size: cover;
+    background-position: center;
+    color: var(--color-blanco-capitan);
+    padding: 4rem 0;
+    text-align: center;
+    border-bottom: 3px solid var(--color-rojo-capitan);
+    position: relative;
+    overflow: hidden;
+    
+}
+
+/* Efecto de sombra y elevación para las tarjetas al pasar el mouse */
+.card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25), 0 6px 6px rgba(0, 0, 0, 0.22);
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+}
+
+.card {
+    transition: all 0.3s ease-in-out;
+}
+
+
+.titulo-principal {
+    color: var(--color-blanco-capitan);
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+}
+
+.header-ai p {
+    font-style: italic;
+    color: #ccc;
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* Estilo de la barra de navegación (Nav)
+  Colores y efectos para los enlaces.
+*/
+.navbar-custom {
+    background-color: var(--color-azul-capitan);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    border-top: 2px solid var(--color-rojo-capitan);
+}
+
+.navbar-custom .navbar-brand {
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.navbar-custom .nav-link {
+    color: #fff;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+    color: var(--color-blanco-capitan);
+    text-shadow: var(--color-sombra-blanca);
+    font-weight: bold;
+}
+
+/* Estilo del pie de página (Footer)
+  Fondo de color y texto en blanco.
+*/
+.footer-custom {
+    background-color: var(--color-rojo-capitan);
+    color: var(--color-blanco-capitan);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 5rem;
+    border-top: 2px solid var(--color-azul-capitan);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer-custom p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Estilos adicionales para otros elementos
+  Diferentes niveles de títulos y énfasis.
+*/
+h2, h3, h4, h5, h6 {
+    color: var(--color-azul-capitan);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    border-bottom: 2px solid var(--color-rojo-capitan);
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid var(--color-rojo-capitan);
+    box-shadow: 0 0 10px rgba(191, 10, 48, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 35, 102, 0.5);
+}
+
+.card-title {
+    color: var(--color-azul-capitan);
+}
+
+/* Estilo para tablas */
+.table {
+    color: var(--color-azul-capitan);
+    border-color: var(--color-rojo-capitan);
+}
+
+.table thead th {
+    background-color: var(--color-azul-capitan);
+    color: #fff;
+    border-color: var(--color-rojo-capitan);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 35, 102, 0.05);
+}
+
+/* Estilo para botones */
+.btn-primary {
+    background-color: var(--color-rojo-capitan);
+    border-color: var(--color-rojo-capitan);
+    color: var(--color-blanco-capitan);
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #a6092a;
+    transform: scale(1.05);
+}
+
+/* Estilo para links en el cuerpo del texto */
+a {
+    color: var(--color-rojo-capitan);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #a6092a;
+    text-decoration: underline;
+}
+
+/* Clases para texto enfatizado */
+.resaltado {
+    color: var(--color-rojo-capitan);
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(191, 10, 48, 0.5);
+}
